@@ -50,7 +50,7 @@ pub fn random_polynomial<R: rand::Rng>(s: GF256, k: u8, rng: &mut R) -> Vec<GF25
 // Each polynomial corresponds to one byte chunk of the original secret.
 // The iterator will start at `x = 1` and end at `x = 255`.
 pub fn get_evaluator(polys: Vec<Vec<GF256>>) -> impl Iterator<Item = Share> {
-    (1..=u8::max_value()).map(GF256).map(move |x| Share {
+    (1..=u8::MAX).map(GF256).map(move |x| Share {
         x: x.clone(),
         y: polys
             .iter()
