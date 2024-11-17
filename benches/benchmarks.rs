@@ -1,7 +1,7 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use std::convert::TryFrom;
 
-use sharks::{Share, Sharks};
+use blahaj::{Share, Sharks};
 
 fn dealer(c: &mut Criterion) {
     let sharks = Sharks(255);

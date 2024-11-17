@@ -1,21 +1,16 @@
 [package]
-name = "sharks"
+name = "blahaj"
 version = "0.5.0"
-authors = ["Aitor Ruano <codearm@pm.me>"]
-description = "Fast, small and secure Shamir's Secret Sharing library crate"
-homepage = "https://github.com/c0dearm/sharks"
-repository = "https://github.com/c0dearm/sharks"
+authors = ["Ryan Heywood <ryan@distrust.co>"]
+description = "Fast, small, and secure Shamir's Secret Sharing"
+homepage = "https://git.distrust.co/public/blahaj"
+repository = "https://git.distrust.co/public/blahaj"
 readme = "README.md"
-keywords = ["shamir", "secret", "sharing", "share", "crypto"]
+keywords = ["shamir", "secret", "sharing", "share", "cryptography"]
 categories = ["algorithms", "cryptography", "mathematics"]
-license = "MIT/Apache-2.0"
-edition = "2018"
+license = "MIT"
+edition = "2021"
 
-[badges]
-maintenance = { status = "actively-developed" }
-codecov = { repository = "c0dearm/sharks" }
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
 default = ["std", "zeroize_memory"]
 std = ["rand/std", "rand/std_rng"]
