@@ -114,7 +114,7 @@ impl Sharks {
     /// let shares: Vec<Share> = dealer.take(3).collect();
     #[cfg(feature = "std")]
     pub fn dealer(&self, secret: &[u8]) -> impl Iterator<Item = Share> {
-        let mut rng = rand::thread_rng();
+        let mut rng = rand::rng();
         self.dealer_rng(secret, &mut rng)
     }
 
